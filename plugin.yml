@@ -1,0 +1,9 @@
+name: DCTEconomy
+main: DCTEconomy\dcteconomy
+load: STARTUP
+author: DockCreaTer team
+version: 1.0.0
+api-
+    2.0.0
+    1.7.0
+    1.1.0
