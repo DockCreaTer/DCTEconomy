@@ -1,7 +1,7 @@
 
 <?php
 
-namespace event;
+namespace dcteconomy;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
