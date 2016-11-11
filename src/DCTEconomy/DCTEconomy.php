@@ -29,4 +29,10 @@ use pocketmine\utils\Utils;
 use pocketmine\utils\TextFormat;
 
 class DCTEconomy extends PluginBase implements Listener{
+  public function onEnable(){
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        $this->getServer()->getPluginManager()->registerEvents(new event($this), $this);
+        @mkdir($this->getDataFolder());   
+        $this->task= new Config($this->getDataFolder()."PlayerTask.yml", Config::YAML, array());
+        }
 }
