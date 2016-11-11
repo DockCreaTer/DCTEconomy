@@ -1,7 +1,7 @@
 
 <?php
 
-namespace info;
+namespace event;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
