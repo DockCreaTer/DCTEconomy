@@ -29,3 +29,4 @@ use pocketmine\utils\Utils;
 use pocketmine\utils\TextFormat;
 
 class DCTEconomy extends PluginBase implements Listener{
+}
