@@ -25,14 +25,14 @@ class info implements Listener
 {
 
 
-public function __construct(DCTMocomy $main)
+public function __construct(DCTEconomy $main)
     {
         $this->m = $main;
         }
 public function onJoin(PlayerJoinEvent $e){
     $p=$e->getPlayer();
     $n=$p->getName();
-  $p->sendmessage("");
+  $p->sendmessage("測試");
    }
     }
   
