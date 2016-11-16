@@ -8,6 +8,7 @@ use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\Config;
+use pocketmine\utils\TextFormat;
 use pocketmine\math\Vector3;
 use pocketmine\item\Item;
 use pocketmine\level\Level;
@@ -30,7 +31,7 @@ public function __construct(DCTEconomy $main)
 public function onJoin(PlayerJoinEvent $e){
     $p=$e->getPlayer();
     $n=$p->getName();
-  $p->sendmessage("測試");
+  $p->sendmessage(TextFormat::YELLOW . "此伺服器使用DCTEconomy經濟插件, 請安心遊玩");
 if($this->m->p->get($n) == null){
 $this->m->p->set(strtolower($n),0);
 $this->m->p->save();
@@ -38,5 +39,4 @@ $this->m->p->save();
    }
  }
   
-
 
