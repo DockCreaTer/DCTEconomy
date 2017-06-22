@@ -1,8 +1,8 @@
 <?php
 
 /*
- * DCTEconomy, the economy plugin with for PocketMine-MP
- * Copyright (C) 2016-2016  DockCreaTer <dockcreater@gmail.com>
+ * DCTEconomy, A economy plugin written for PocketMine-MP(PMMP)
+ * Copyright (C) 2016-2017  DockCreaTer 
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,6 +33,7 @@ use pocketmine\command\CommandExecutor;
 class DCTEconomy extends PluginBase implements CommandExecutor, Listener
 {
   private static $dct;
+	
   public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
        $this->getServer()->getPluginManager()->registerEvents(new Event($this), $this);
